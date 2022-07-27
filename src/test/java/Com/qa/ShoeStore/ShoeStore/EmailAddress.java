@@ -14,6 +14,7 @@ public class EmailAddress extends Base {
 	
 	public void emailText() throws IOException {
 	driver = initilizrDriver();
+	driver.get("https://rb-shoe-store.herokuapp.com/");
 	SoftAssert softAssertion= new SoftAssert();
 
 	EmailaddressPage emp= new EmailaddressPage(driver);
